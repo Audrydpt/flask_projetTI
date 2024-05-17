@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="{{ url_for('accueil') }}">Accueil</a></li>
+        <li><a href="{{ url_for('tous_produits') }}">Nos produits</a></li>
+        <li><a href="{{ url_for('categories') }}">Catégories</a></li>
+    </ul>
+{% endblock content %}

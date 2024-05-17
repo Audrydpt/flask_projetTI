@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Produits de la catégorie : {{ nom_categ }}</h2>
+    <ul>
+        {% for produit in produits %}
+            <li>{{ produit.nome }} - {{ produit.descriptione }} - {{ produit.tarife }}€</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
